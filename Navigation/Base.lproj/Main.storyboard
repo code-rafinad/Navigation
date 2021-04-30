@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1I2-rN-qXI">
-                                <rect key="frame" x="160" y="219" width="94" height="30"/>
+                                <rect key="frame" x="160" y="229" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Controller 1"/>
                                 <connections>
@@ -25,7 +25,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-TW-B7O">
-                                <rect key="frame" x="160" y="257" width="94" height="30"/>
+                                <rect key="frame" x="160" y="267" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Controller 2"/>
                                 <connections>
@@ -54,11 +54,33 @@
                         <viewLayoutGuide key="safeArea" id="0gZ-mq-IVa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Controller 1" id="SaI-Wh-10z"/>
+                    <navigationItem key="navigationItem" title="Controller 1" id="FCq-8c-Nl1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uTP-DQ-4lR">
+                            <connections>
+                                <segue destination="JTG-ah-wT7" kind="show" id="ONp-qV-Zyj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gp5-lF-xiF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="78"/>
+        </scene>
+        <!--Add new info-->
+        <scene sceneID="TpO-Y1-zmw">
+            <objects>
+                <viewController id="JTG-ah-wT7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lmj-Rk-Jcg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hdr-s3-pVo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add new info" id="sOI-G0-QZm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fv-15-nz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2294" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nYK-2l-5om">
